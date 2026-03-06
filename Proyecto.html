@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MoonLyn-ART - Materiales de Arte</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+
+/* PALETA */
+body{
+    background-color:#F2DCDB;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* NAVBAR */
+.navbar{
+    background-color:#6C0820;
+}
+
+.navbar-brand, .nav-link{
+    color:white !important;
+    font-weight:500;
+}
+
+.nav-link:hover{
+    color:#F2AEBC !important;
+}
+
+/* HERO CON IMAGEN */
+.hero{
+    background: url('img/fondo.jpg') center/cover no-repeat;
+    height:100vh;
+    position:relative;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    color:white;
+}
+
+/* CAPA OSCURA TRANSPARENTE */
+.overlay{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.30);
+}
+
+.hero-content{
+    position:relative;
+    z-index:2;
+}
+
+.hero h1{
+    font-size:80px;
+    font-weight:600;
+    letter-spacing:2px;
+}
+
+.btn-custom{
+    background-color:#6C0820;
+    color:white;
+    border-radius:30px;
+    padding:10px 30px;
+}
+
+.btn-custom:hover{
+    background-color:#5A86CB;
+    color:white;
+}
+
+/* SECCIONES */
+.section-title{
+    margin:70px 0 40px 0;
+    font-weight:500;
+    color:#6C0820;
+}
+
+/* PRODUCTOS */
+.card{
+    border:none;
+    border-radius:15px;
+    transition:transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 10px 25px rgba(0,0,0,0.2);
+}
+.card img{
+    border-radius:15px 15px 0 0;
+}
+
+/* FOOTER */
+footer{
+    background-color:#6C0820;
+    color:white;
+    padding:20px;
+}
+.card img{
+    width:100%;
+    height:450px;
+    object-fit:cover;
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#inicio">MoonLyn-ART</a>
+    <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="#productos">Productos</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="inicio">
+  <div class="overlay"></div>
+
+  <div class="hero-content">
+    <h1>Materiales de Arte</h1>
+    <p class="lead">Descubre todo para inspirar tu creatividad</p>
+    <a href="#productos" class="btn btn-custom mt-3">Explorar</a>
+  </div>
+</section>
+
+<!-- PRODUCTOS -->
+<div class="container" id="productos">
+  <h2 class="text-center section-title">Nuestros Productos</h2>
+
+  <div class="row g-4">
+
+    <div class="col-md-4">
+      <div class="card shadow">
+        <img src="img/marcadores acrilicos.png" class="img-fluid">
+        <div class="card-body text-center">
+          <h5>Marcadores Acrilicos</h5>
+          <p>Set de 16 colores.</p>
+          <p>$20.50</p>
+          <button class="btn btn-custom">Comprar</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card shadow">
+        <img src="img/Oleo Pastel.jpeg" class="img-fluid">
+        <div class="card-body text-center">
+          <h5>Oleo pastel</h5>
+          <p>Set de 12 colores.</p>
+          <p>$20.50</p>
+          <button class="btn btn-custom">Comprar</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card shadow">
+        <img src="img/Gouache de 112 colores.jpg" class="img-fluid">
+        <div class="card-body text-center">
+          <h5>Gouache</h5>
+          <p>Set de 112 colores.</p>
+          <p>$20.50</p>
+          <button class="btn btn-custom">Comprar</button>
+        </div>
+      </div>
+    </div>
+
+ <div class="col-md-4">
+      <div class="card shadow">
+        <img src="img/Gouache de 30 coleres.jpg" class="img-fluid">
+        <div class="card-body text-center">
+          <h5>Gouache</h5>
+          <p>Set de 36 colores.</p>
+          <p>$40.75</p>
+          <button class="btn btn-custom">Comprar</button>
+        </div>
+      </div>
+    </div>
+
+ <div class="col-md-4">
+      <div class="card shadow">
+        <img src="img/acuarela.jpeg" class="img-fluid">
+        <div class="card-body text-center">
+          <h5>Acuarela</h5>
+          <p>Set de 72 colores con pincel recargable.</p>
+          <p>$28.50</p>
+          <button class="btn btn-custom">Comprar</button>
+        </div>
+      </div>
+    </div>
+
+ <div class="col-md-4">
+      <div class="card shadow">
+        <img src="img/pinceles recargables.jpeg" class="img-fluid">
+        <div class="card-body text-center">
+          <h5>Pincel Recargable</h5>
+          <p>set de 12 pinceles recargables.</p>
+          <p>$7.75</p>
+          <button class="btn btn-custom">Comprar</button>
+        </div>
+      </div>
+    </div>
+
+ <div class="col-md-4">
+      <div class="card shadow">
+        <img src="img/pinceles.jpeg" class="img-fluid">
+        <div class="card-body text-center">
+          <h5>Pinceles</h5>
+          <p>Kit de 24 pinceles con estuche.</p>
+          <p>$13.00</p>
+          <button class="btn btn-custom">Comprar</button>
+        </div>
+      </div>
+    </div>
+
+ <div class="col-md-4">
+      <div class="card shadow">
+        <img src="img/Set de Pinceles.jpg" class="img-fluid">
+        <div class="card-body text-center">
+          <h5>Pinceles</h5>
+          <p>Kit de 36 pinceles con estuche.</p>
+          <p>$20.00</p>
+          <button class="btn btn-custom">Comprar</button>
+        </div>
+      </div>
+    </div>
+
+ <div class="col-md-4">
+      <div class="card shadow">
+        <img src="img/Set de lapices.jpg" class="img-fluid">
+        <div class="card-body text-center">
+          <h5>Lapices</h5>
+          <p>Set de 6 lapices de grafito.</p>
+          <p>$5.00</p>
+          <button class="btn btn-custom">Comprar</button>
+        </div>
+      </div>
+    </div>
+
+ <div class="col-md-4">
+      <div class="card shadow">
+        <img src="img/Kit de lapices.jpg" class="img-fluid">
+        <div class="card-body text-center">
+          <h5>Lapices</h5>
+          <p>Kit de lapices, carboncillo, difumino y borrador.</p>
+          <p>$18.25</p>
+          <button class="btn btn-custom">Comprar</button>
+        </div>
+      </div>
+    </div>
+
+ <div class="col-md-4">
+      <div class="card shadow">
+        <img src="img/Borrador maleable.jpg" class="img-fluid">
+        <div class="card-body text-center">
+          <h5>Borrador Maleable</h5>
+          <p>Borrador maleable .</p>
+          <p>$2.00</p>
+          <button class="btn btn-custom">Comprar</button>
+        </div>
+      </div>
+    </div>
+
+ <div class="col-md-4">
+      <div class="card shadow">
+        <img src="img/Lienzos.jpg" class="img-fluid">
+        <div class="card-body text-center">
+          <h5>Lienzos</h5>
+          <p>Lienzo de 60x40.</p>
+          <p>$4.45</p>
+          <button class="btn btn-custom">Comprar</button>
+        </div>
+      </div>
+    </div>
+
+ <div class="col-md-4">
+      <div class="card shadow">
+        <img src="img/Sketchbook negro.jpg" class="img-fluid">
+        <div class="card-body text-center">
+          <h5>Sketchbook</h5>
+          <p>Sketchbook cosido de tapa dura de 15x15.</p>
+          <p>$8.00</p>
+          <button class="btn btn-custom">Comprar</button>
+        </div>
+      </div>
+    </div>
+
+ <div class="col-md-4">
+      <div class="card shadow">
+        <img src="img/Sketchbook en espiral.jpg" class="img-fluid">
+        <div class="card-body text-center">
+          <h5>Sketchbook</h5>
+          <p>Sketchbook en espiral de 21x29.</p>
+          <p>$6.30</p>
+          <button class="btn btn-custom">Comprar</button>
+        </div>
+      </div>
+    </div>
+ <div class="col-md-4">
+      <div class="card shadow">
+        <img src="img/Set de Sketchbooks.jpg" class="img-fluid">
+        <div class="card-body text-center">
+          <h5>Sketchbook</h5>
+          <p>Set de 3 Sketchbooks de 12x16.</p>
+          <p>$12.00</p>
+          <button class="btn btn-custom">Comprar</button>
+        </div>
+      </div>
+    </div>
+
+ <div class="col-md-4">
+      <div class="card shadow">
+        <img src="img/pintura acrilica.jpeg" class="img-fluid">
+        <div class="card-body text-center">
+          <h5>Pintura acrilica</h5>
+          <p>Set de Pinturas acrilicas de 24 colores .</p>
+          <p>$12.00</p>
+          <button class="btn btn-custom">Comprar</button>
+        </div>
+      </div>
+    </div>
+
+ <div class="col-md-4">
+      <div class="card shadow">
+        <img src="img/sakura pigma.jpg" class="img-fluid">
+        <div class="card-body text-center">
+          <h5>Estilógrafos</h5>
+          <p>Set de 11 Estilógrafos.</p>
+          <p>$9.55</p>
+          <button class="btn btn-custom">Comprar</button>
+        </div>
+      </div>
+    </div>
+
+<div class="col-md-4">
+  <div class="card shadow">
+    <img src="img/Estilografos de colores.jpg" class="img-fluid">
+    <div class="card-body text-center">
+      <h5>Estilógrafos</h5>
+      <p>Set de 10 Estilógrafos de colores.</p>
+      <p>$12.55</p>
+      <button class="btn btn-custom">Comprar</button>
+    </div>
+  </div>
+</div>
+
+</div> <!-- CIERRA ROW -->
+</div> <!-- CIERRA CONTAINER PRODUCTOS -->
+
+<div class="container text-center my-5">
+
+<h2 class="section-title">Review de nuestro producto estrella</h2>
+
+<a href="https://youtu.be/JgcWmF9wBNg" target="_blank" class="btn btn-custom">
+Ver video
+</a>
+
+</div>
+
+<!-- CONTACTO -->
+<section class="container" id="contacto">
+  <h2 class="text-center section-title">Contáctanos</h2>
+
+  <div class="row text-center mt-4">
+
+    <div class="col-md-4">
+      <h4>📧 Correo</h4>
+      <p>moonlyn_art@gmail.com</p>
+    </div>
+
+    <div class="col-md-4">
+      <h4>📱 WhatsApp</h4>
+      <p>+593 96 319 3257</p>
+    </div>
+
+    <div class="col-md-4">
+      <h4>📍 Ubicación</h4>
+      <p>Guayaquil, Ecuador</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="text-center">
+  <p>MoonLyn ART © 2026 | Creado por Evelyn Reyes </p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
